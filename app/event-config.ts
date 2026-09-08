@@ -54,8 +54,8 @@ export const eventConfig = {
     officialCeremonyUrl: "https://shimogamo-jinja.jp/ceremony/",
   },
   images: {
-    heroDesktop: "/shimogamo-hero-wakon-pc-final.png",
-    heroMobile: "/shimogamo-hero-wakon-mobile-final.png",
+    heroDesktop: assetPath("/shimogamo-hero-wakon-pc-final.png"),
+    heroMobile: assetPath("/shimogamo-hero-wakon-mobile-final.png"),
     heroAlt: "下鴨神社の境内と紅白の水引をあしらった神前式のご案内",
     ceremonyHero: "/ceremony-top.png",
     emblem: "/awaji-musubi-red-white-v2.png",
@@ -149,3 +149,4 @@ export const eventConfig = {
 export function lines(value: string) {
   return value.split("\n");
 }
+import { assetPath } from "./asset-path";

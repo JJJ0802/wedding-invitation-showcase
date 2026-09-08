@@ -1,5 +1,6 @@
 import Image from "next/image";
 import RsvpForm from "../rsvp-form";
+import { assetPath } from "../asset-path";
 
 const faqs = [
   { question: "服装について", answer: "セミフォーマルをおすすめしています。会場周辺は朝晩冷え込むことがありますので、羽織ものをお持ちください。" },
@@ -54,7 +55,7 @@ export default function Home() {
         <div className="profile-cards">
           <article className="profile-card groom-card">
             <div className="profile-card-symbol" aria-hidden="true">⌁</div>
-            <Image src="/profile-haruto.jpg" alt="新郎・陽翔のプロフィール写真" width={1120} height={1400} />
+            <Image src={assetPath("/profile-haruto.jpg")} alt="新郎・陽翔のプロフィール写真" width={1120} height={1400} />
             <div className="profile-card-name">
               <span>GROOM</span>
               <h3>陽翔</h3>
@@ -75,7 +76,7 @@ export default function Home() {
 
           <article className="profile-card bride-card">
             <div className="profile-heart profile-heart-top" aria-hidden="true">♡</div>
-            <Image src="/profile-aoi.jpg" alt="新婦・葵のプロフィール写真" width={1120} height={1400} />
+            <Image src={assetPath("/profile-aoi.jpg")} alt="新婦・葵のプロフィール写真" width={1120} height={1400} />
             <div className="profile-card-name">
               <span>BRIDE</span>
               <h3>葵</h3>

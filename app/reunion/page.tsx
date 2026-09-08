@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import RsvpForm from "../rsvp-form";
 import { reunionConfig as event } from "../reunion-config";
+import { assetPath } from "../asset-path";
 
 export const metadata = {
   title: `${event.school} ${event.graduationYear} ${event.title}`,
@@ -15,7 +16,7 @@ export default function ReunionPage() {
     <section className="ru-hero">
       <nav><strong>AOBA H.S. / CLASS OF 2015</strong><div><a href="#about">ABOUT</a><a href="#info">INFO</a><a href="#rsvp">RSVP</a></div></nav>
       <div className="ru-hero-copy"><p>IT&apos;S BEEN A WHILE.</p><h1>あの頃の<br />みんなに、<br /><i>会いにいこう。</i></h1><div><span>{event.school}</span><b>{event.graduationYear}</b></div></div>
-      <figure><Image src="/reunion-school-ceremony.png" alt="体育館で行われた学校行事の様子" fill priority sizes="(max-width: 760px) 100vw, 46vw" /></figure>
+      <figure><Image src={assetPath("/reunion-school-ceremony.png")} alt="体育館で行われた学校行事の様子" fill priority sizes="(max-width: 760px) 100vw, 46vw" /></figure>
       <div className="ru-date"><span>NOV.</span><strong>21</strong><small>2026 SAT</small></div>
     </section>
     <section className="ru-letter" id="about"><p className="ru-label">A LETTER TO EVERYONE</p><h2>{event.title}</h2><div>{event.message.split("\n").map(line => <p key={line}>{line}</p>)}</div><span>実行委員会一同</span></section>

@@ -26,6 +26,7 @@ jobs:
       - uses: actions/configure-pages@v5
       - run: npm ci
       - run: npm run build
+      - run: node scripts/fix-pages-assets.mjs
       - uses: actions/upload-pages-artifact@v3
         with:
           path: out
