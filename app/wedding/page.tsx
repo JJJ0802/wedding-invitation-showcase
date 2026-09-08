@@ -49,42 +49,16 @@ export default function WashikiWeddingPage() {
       </section>
 
       <section className="wa-greeting">
-        <div className="wa-greeting-gallery" aria-hidden="true">
-          <figure className="wa-greeting-photo wa-greeting-photo-1">
-            <Image src="/greeting-venice.jpg" alt="" fill sizes="(max-width: 700px) 52vw, 24vw" />
-          </figure>
-          <figure className="wa-greeting-photo wa-greeting-photo-2">
-            <Image src="/greeting-rings.jpg" alt="" fill sizes="(max-width: 700px) 44vw, 20vw" />
-          </figure>
-          <figure className="wa-greeting-photo wa-greeting-photo-3">
-            <Image src="/greeting-boat.jpeg" alt="" fill sizes="(max-width: 700px) 42vw, 21vw" />
-          </figure>
-          <figure className="wa-greeting-photo wa-greeting-photo-4">
-            <Image src="/greeting-mountain.png" alt="" fill sizes="(max-width: 700px) 48vw, 23vw" />
-          </figure>
-        </div>
         <div className="wa-corner wa-corner-left" />
         <div className="wa-corner wa-corner-right" />
         <h2>ご挨拶</h2>
         <div className="wa-greeting-copy">
-          <figure className="wa-greeting-inline wa-greeting-inline-1">
-            <Image src="/greeting-venice.jpg" alt="ヴェネツィアを旅した二人" fill sizes="(max-width: 700px) 100vw, 1040px" priority unoptimized />
-          </figure>
           <p className="wa-greeting-salutation">謹啓</p>
           <p>皆さまにおかれましては<br />ますますご清祥のこととお慶び申し上げます</p>
-          <figure className="wa-greeting-inline wa-greeting-inline-2">
-            <Image src="/greeting-rings.jpg" alt="二人の結婚指輪" fill sizes="72vw" />
-          </figure>
           <p>このたび私たちは<br />京都・下鴨神社にて<br />結婚式を執り行うこととなりました</p>
           <p>これまで私たちを支えてくださった<br />大切な皆さまへ感謝の気持ちをお伝えし<br />新たな門出を見守っていただきたく<br />この日を迎えることを決めました</p>
-          <figure className="wa-greeting-inline wa-greeting-inline-3">
-            <Image src="/greeting-boat.jpeg" alt="東京タワーを訪れた二人" fill sizes="74vw" />
-          </figure>
           <p>日頃お世話になっている皆さまと<br />この大切な一日をともに過ごせますことを<br />心より嬉しく思っております</p>
           <p>ご多用の折とは存じますが<br />ぜひご出席いただき<br />私たちの門出を見届けていただけましたら幸いです</p>
-          <figure className="wa-greeting-inline wa-greeting-inline-4">
-            <Image src="/greeting-mountain.png" alt="婚姻届を手にした二人" fill sizes="82vw" />
-          </figure>
           <p>当日皆さまにお会いできますことを<br />心より楽しみにしております</p>
           <p className="wa-greeting-closing">謹白</p>
         </div>
