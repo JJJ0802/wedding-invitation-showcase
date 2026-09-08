@@ -6,10 +6,10 @@
     "node": "22"
   },
   "scripts": {
-    "dev": "node scripts/run-next.mjs dev",
+    "dev": "next dev",
     "prebuild": "",
-    "build": "node scripts/run-next.mjs build",
-    "start": "node scripts/run-next.mjs start",
+    "build": "next build",
+    "start": "next start",
     "deploy:firebase": "node scripts/firebase-deploy.mjs",
     "project:create": "node scripts/create-project.mjs",
     "data:lifecycle": "node scripts/data-lifecycle.mjs",
