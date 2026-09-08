@@ -1,5 +1,9 @@
 # Wedding Invitation Showcase
 
+## Photo credits
+
+- Japanese wedding hero: [Tarot Reader Yu / Pexels](https://www.pexels.com/photo/traditional-wedding-ceremony-13829008/) — Pexels free-use photo, used for the fictional public demo.
+
 GitHub Pages向けの静的ショーケースです。トップのカードから、各イベントパターンの個別ページへ遷移できます。
 
 - `/washiki/` 結婚式・和風

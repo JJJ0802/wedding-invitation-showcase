@@ -37,9 +37,9 @@ export const eventConfig = {
   },
   event: {
     kind: "神前式",
-    dateIso: "2026-10-03",
-    dateJapanese: "令和八年 十月三日",
-    dateJapaneseHero: "令和八年　十月三日　土曜日",
+    dateIso: "2027-04-17",
+    dateJapanese: "令和九年 四月十七日",
+    dateJapaneseHero: "令和九年　四月十七日　土曜日",
     ceremonyTime: "十三時",
     meetingTime: "十二時半",
     waitingRoomOpenTime: "十二時",
@@ -54,8 +54,8 @@ export const eventConfig = {
     officialCeremonyUrl: "https://shimogamo-jinja.jp/ceremony/",
   },
   images: {
-    heroDesktop: assetPath("/shimogamo-hero-wakon-pc-final.png"),
-    heroMobile: assetPath("/shimogamo-hero-wakon-mobile-final.png"),
+    heroDesktop: assetPath("/washiki-demo-pexels-13829008.jpg"),
+    heroMobile: assetPath("/washiki-demo-pexels-13829008.jpg"),
     heroAlt: "下鴨神社の境内と紅白の水引をあしらった神前式のご案内",
     ceremonyHero: "/ceremony-top.png",
     emblem: "/awaji-musubi-red-white-v2.png",
@@ -142,7 +142,7 @@ export const eventConfig = {
   metadata: {
     title: "太田絢也・祐里香 神前式",
     description: "令和八年十月三日、下鴨神社で執り行う神前式のご案内です。",
-    socialDescription: "2026年10月3日 · 下鴨神社",
+    socialDescription: "2027年4月17日 · 下鴨神社",
   },
 } as const satisfies EventConfig;
 
