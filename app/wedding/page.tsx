@@ -12,7 +12,7 @@ const washikiFaqs = [
 ];
 
 export const metadata = {
-  title: "太田絢也・祐里香 神前式",
+  title: "田中太郎・山田花子 神前式",
   description: "令和九年四月十七日、下鴨神社で執り行う神前式の公開デモです。",
 };
 
@@ -62,7 +62,7 @@ export default function WashikiWeddingPage() {
           <p>当日皆さまにお会いできますことを<br />心より楽しみにしております</p>
           <p className="wa-greeting-closing">謹白</p>
         </div>
-        <p className="wa-names"><span>新郎　太田 絢也　　　　　 　　</span><span>新婦　太田 祐里香（旧姓:村山）</span></p>
+        <p className="wa-names"><span>新郎　田中 太郎　　　　　 　　</span><span>新婦　山田 花子</span></p>
       </section>
 
       {/* 将来再表示するため、プロフィールのコードは残しています。 */}
@@ -74,14 +74,14 @@ export default function WashikiWeddingPage() {
         <div className="wa-profile-grid">
           <article>
             <span>新　郎</span>
-            <strong>絢也</strong>
-            <p>東京都生まれ。珈琲を淹れながら音楽を聴く時間を好みます。祐里香の朗らかな笑顔に、いつも支えられています。</p>
+            <strong>太郎</strong>
+            <p>東京都生まれ。珈琲を淹れながら音楽を聴く時間を好みます。花子の朗らかな笑顔に、いつも支えられています。</p>
           </article>
           <div className="wa-musubi" aria-hidden="true">結</div>
           <article>
             <span>新　婦</span>
-            <strong>祐里香</strong>
-            <p>長野県生まれ。季節の花と小さな旅を好みます。絢也の穏やかでまっすぐな人柄に惹かれました。</p>
+            <strong>花子</strong>
+            <p>長野県生まれ。季節の花と小さな旅を好みます。太郎の穏やかでまっすぐな人柄に惹かれました。</p>
           </article>
         </div>
       </section>

@@ -31,9 +31,9 @@ export type EventConfig = {
 
 export const eventConfig = {
   couple: {
-    displayName: "太田絢也・祐里香",
-    groomSignature: "新郎　太田 絢也　　　　　 　　",
-    brideSignature: "新婦　太田 祐里香（旧姓:村山）",
+    displayName: "田中太郎・山田花子",
+    groomSignature: "新郎　田中 太郎　　　　　 　　",
+    brideSignature: "新婦　山田 花子",
   },
   event: {
     kind: "神前式",
@@ -77,8 +77,8 @@ export const eventConfig = {
     "当日皆さまにお会いできますことを\n心より楽しみにしております",
   ],
   profiles: {
-    groom: { name: "絢也", text: "東京都生まれ。珈琲を淹れながら音楽を聴く時間を好みます。祐里香の朗らかな笑顔に、いつも支えられています。" },
-    bride: { name: "祐里香", text: "長野県生まれ。季節の花と小さな旅を好みます。絢也の穏やかでまっすぐな人柄に惹かれました。" },
+    groom: { name: "太郎", text: "東京都生まれ。珈琲を淹れながら音楽を聴く時間を好みます。花子の朗らかな笑顔に、いつも支えられています。" },
+    bride: { name: "花子", text: "長野県生まれ。季節の花と小さな旅を好みます。太郎の穏やかでまっすぐな人柄に惹かれました。" },
   },
   schedule: {
     waitingRoomNote: "※控室は十二時より使用可能。挙式の説明があるため、十二時半には必ず控室にお入りください。",
@@ -140,7 +140,7 @@ export const eventConfig = {
     ],
   },
   metadata: {
-    title: "太田絢也・祐里香 神前式",
+    title: "田中太郎・山田花子 神前式",
     description: "令和八年十月三日、下鴨神社で執り行う神前式のご案内です。",
     socialDescription: "2027年4月17日 · 下鴨神社",
   },
