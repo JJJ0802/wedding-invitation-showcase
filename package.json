@@ -1,0 +1,60 @@
+{
+  "name": "wedding-rsvp-site",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "22"
+  },
+  "scripts": {
+    "dev": "node scripts/run-next.mjs dev",
+    "prebuild": "npm run validate:config",
+    "build": "node scripts/run-next.mjs build",
+    "start": "node scripts/run-next.mjs start",
+    "deploy:firebase": "node scripts/firebase-deploy.mjs",
+    "project:create": "node scripts/create-project.mjs",
+    "data:lifecycle": "node scripts/data-lifecycle.mjs",
+    "health:check": "node scripts/check-health.mjs",
+    "test": "npm run build",
+    "validate:event": "node --no-warnings --experimental-strip-types scripts/validate-event-config.ts",
+    "validate:projects": "node scripts/validate-projects.mjs",
+    "test:project-isolation": "node scripts/test-project-isolation.mjs",
+    "test:data-lifecycle": "node scripts/test-data-lifecycle.mjs",
+    "validate:env": "node scripts/validate-runtime-env.mjs",
+    "validate:secrets": "node scripts/scan-secrets.mjs",
+    "validate:config": "npm run validate:event && npm run validate:projects && npm run test:project-isolation && npm run test:data-lifecycle && npm run validate:secrets",
+    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next --ignore-pattern .next-dev --ignore-pattern .next-local",
+    "cdk": "cdk",
+    "cdk:synth": "npm run cdk -- synth --quiet"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "3.1115.0",
+    "@aws-sdk/client-sesv2": "3.1115.0",
+    "@aws-sdk/client-sqs": "3.1115.0",
+    "@aws-sdk/lib-dynamodb": "3.1115.0",
+    "amazon-cognito-identity-js": "^6.3.20",
+    "firebase": "^12.18.0",
+    "firebase-admin": "^13.10.0",
+    "next": "15.5.23",
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "3.3.1",
+    "@tailwindcss/postcss": "4.2.1",
+    "@types/node": "22.19.19",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "aws-cdk": "2.1138.0",
+    "aws-cdk-lib": "2.266.0",
+    "constructs": "10.8.1",
+    "esbuild": "^0.28.2",
+    "eslint": "9.39.4",
+    "eslint-config-next": "15.5.23",
+    "tailwindcss": "4.2.1",
+    "tsx": "4.23.12",
+    "typescript": "5.9.3"
+  },
+  "overrides": {
+    "postcss": "8.5.26"
+  }
+}
