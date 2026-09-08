@@ -1,5 +1,1 @@
-import { redirect } from "next/navigation";
-
-export default function CeremonyRedirect() {
-  redirect("/service");
-}
+export { default } from "../service/page";

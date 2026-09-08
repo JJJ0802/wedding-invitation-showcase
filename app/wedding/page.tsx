@@ -1,5 +1,1 @@
-import { redirect } from "next/navigation";
-
-export default function WeddingRedirect() {
-  redirect("/service");
-}
+export { default } from "../service/page";
