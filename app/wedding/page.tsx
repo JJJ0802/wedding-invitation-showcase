@@ -1,1 +1,8 @@
-export { default } from "../service/page";
+import Image from "next/image";
+import { eventConfig as event } from "../event-config";
+
+export const metadata = { title: "和式ウェディング・公開デモ", description: "架空の写真と日付を使用した和式Web招待状の公開デモです。" };
+
+export default function WeddingDemoPage() {
+  return <main className="washiki"><section className="wa-hero hero-variant-1"><picture><img className="wa-hero-photo" src={event.images.heroDesktop} alt="神社での和婚イメージ" /></picture><div className="wa-hero-shade" /><div className="wa-hero-center"><div className="wa-awaji-musubi"><Image src={event.images.emblem} alt="淡路結び" fill sizes="254px" /></div><p className="wa-kicker">結 婚 式 の ご 案 内</p><h1><span>晴れの日</span><i>神前式</i></h1><div className="wa-title-rule"><b>寿</b></div><p className="wa-subtitle">{event.venue.name}</p><div className="wa-event-meta"><p className="wa-date">{event.event.dateJapaneseHero}</p><span className="wa-event-divider" /><p className="wa-time">{event.event.ceremonyTime} 挙式</p></div></div></section><section style={{padding:"110px 22px",maxWidth:760,margin:"auto",textAlign:"center"}}><p style={{letterSpacing:".35em",color:"#9b261f"}}>ご あ い さ つ</p>{event.greeting.slice(0,3).map((paragraph)=><p key={paragraph} style={{whiteSpace:"pre-line",lineHeight:2.4,margin:"34px 0"}}>{paragraph}</p>)}</section><section style={{padding:"90px 22px",background:"#eee6d6",textAlign:"center"}}><p style={{letterSpacing:".3em",color:"#9b261f"}}>日 時・会 場</p><h2 style={{fontSize:"clamp(2rem,6vw,4rem)",fontWeight:400}}>{event.event.dateJapanese}</h2><p>{event.event.ceremonyTime} 挙式</p><p>{event.venue.formalName}</p><p>{event.venue.address}</p><button disabled style={{marginTop:35,padding:"15px 28px",opacity:.55}}>出欠を回答する（デモ）</button></section></main>;
+}
