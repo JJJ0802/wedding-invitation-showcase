@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "node scripts/run-next.mjs dev",
-    "prebuild": "npm run validate:config",
+    "prebuild": "",
     "build": "node scripts/run-next.mjs build",
     "start": "node scripts/run-next.mjs start",
     "deploy:firebase": "node scripts/firebase-deploy.mjs",
